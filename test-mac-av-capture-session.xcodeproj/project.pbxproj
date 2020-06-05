@@ -12,9 +12,9 @@
 		BCF7931C248972150039E91C /* Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF7931B248972150039E91C /* Capture.swift */; };
 		BCF7931F248972C70039E91C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF7931E248972C70039E91C /* AVFoundation.framework */; };
 		BCF79327248988CB0039E91C /* RuntimeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF79326248988CB0039E91C /* RuntimeError.swift */; };
-		BCF793292489951F0039E91C /* Info.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCF793282489941A0039E91C /* Info.plist */; };
 		BCF7932F2489BE140039E91C /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF7932E2489BE140039E91C /* Device.swift */; };
 		BCF79337248A08DA0039E91C /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF79336248A08DA0039E91C /* Output.swift */; };
+		BCF7933C248A1C7B0039E91C /* Info.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCF793282489941A0039E91C /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				BCF793292489951F0039E91C /* Info.plist in CopyFiles */,
+				BCF7933C248A1C7B0039E91C /* Info.plist in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
