@@ -181,4 +181,20 @@ class Capture : NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptur
             }
         }
     }
+    
+    /**
+     Delegate to be inovked when capture session drops samples.
+     */
+    internal func captureOutput(
+        _ output: AVCaptureOutput,
+        didDrop sampleBuffer: CMSampleBuffer,
+        from connection: AVCaptureConnection) {
+        if (output == self.videoOutput) {
+            Output.info("video sample was dropped")
+        } else if (output == self.audioOutput) {
+            Output.info("audio sample was dropped")
+        } else {
+            Output.info("unknown sample was dropped")
+        }
+    }
 }
