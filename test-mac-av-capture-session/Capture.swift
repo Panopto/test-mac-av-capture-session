@@ -5,8 +5,8 @@ class Capture : NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptur
     let targetVideoWidth = 1280
     let targetVideoHeight = 720
     let targetVideoFrameRate: Double = 30.0
-    let targetVideoFormat: FourCharCode = kCMPixelFormat_422YpCbCr8_yuvs
-    let videoOutputFormat: FourCharCode = kCMPixelFormat_422YpCbCr8_yuvs
+    let targetVideoFormat: FourCharCode = kCMPixelFormat_422YpCbCr8
+    let videoOutputFormat: FourCharCode = kCMPixelFormat_422YpCbCr8
     
     let reportSampleInterval = 500
     
