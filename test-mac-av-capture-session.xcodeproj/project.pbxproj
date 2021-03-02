@@ -14,6 +14,7 @@
 		BCF79327248988CB0039E91C /* RuntimeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF79326248988CB0039E91C /* RuntimeError.swift */; };
 		BCF7932F2489BE140039E91C /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF7932E2489BE140039E91C /* Device.swift */; };
 		BCF79337248A08DA0039E91C /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF79336248A08DA0039E91C /* Output.swift */; };
+		BCF7933C248A1C7B0039E91C /* Info.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCF793282489941A0039E91C /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				BCF7933C248A1C7B0039E91C /* Info.plist in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
