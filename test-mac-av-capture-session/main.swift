@@ -14,9 +14,6 @@ struct Options: ParsableCommand {
     @Flag(name: .shortAndLong, help: "List connected devices.")
     var listDevices: Bool
 
-    @Option(name: .shortAndLong, help: "Index of target video device.")
-    var videoDeviceIndex: Int?
-
     @Option(name: .shortAndLong, help: "Index of target sudio device.")
     var audioDeviceIndex: Int?
 }
@@ -24,12 +21,10 @@ struct Options: ParsableCommand {
 let options = Options.parseOrExit();
 
 if options.listDevices {
-    Device.PrintVideoDevices()
     Device.PrintAudioDevices()
-} else if (options.videoDeviceIndex != nil || options.audioDeviceIndex != nil) {
+} else if (options.audioDeviceIndex != nil) {
     let capture = Capture(
-        audioDeviceIndex: options.audioDeviceIndex,
-        videoDeviceIndex: options.videoDeviceIndex)
+        audioDeviceIndex: options.audioDeviceIndex)
     try! capture.start()
     
     print("Running. Stop to type any key.")
